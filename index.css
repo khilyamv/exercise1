@@ -1,30 +1,111 @@
+.white {background:white;}
+.white-text{color:white;}
+.gray{background:#d0d3d4;}
+.gray-text{color:#d0d3d4;}
+.darkgray{background:#707b7c;}
+.darkgray-text{color:#707b7c;}
+.pink{background:#f5b7b1;}
+.pink-text{color:#f5b7b1;}
+.darkpink-text{color: #e74c3c;}
+
 body {
-    background-color: #ffebcd;
-    margin: 0 20% 0 20%;
+    background: #fcfcfc;
     font-family: roboto condensed;
+    margin: 0;
+    overflow-x: hidden;
 }
-h1 {
-    color: #ad035a;
+.container {
+    margin : 0 15% 0 15%;
 }
-.tulisan {
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin : 10px;
-    padding: 5%;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-.gambar {
-    background-color: #ffffff;
-    padding: 5%;
+.bagi3 {
+    width:33.33%;
+    float:left;
     display: block;
-    border-radius: 10px;
+}
+h1, h2, h3, h4, h5, h6 {margin:0;}
+h1{
+    text-align: center;
+    font-size: 1.5em;
+}
+h3 {
+    font-weight: 400;
+}
+p {
+    font-weight: 300;
+}
+.lite {
+    font-size: 12px;
+    font-weight: 300;
+}
+.bold {
+    font-weight: bolder;
+}
+.center {
     text-align: center;
 }
-.gambar img {
-    display:block;
-    width: 50%;
-    margin: 0 auto 0 auto;
+.responsive-img {
+    width: 100%;
 }
-.gambar a {
-    color: chocolate;
-    text-decoration: none;
+.header {
+    padding: 0.7%
+}
+.header-desc {
+    padding: 2% 0 2% 0;
+    text-align: center;
+}
+.logo {
+    width:5%;
+    border-radius: 50%;
+}
+.contact {
+    height: 1em;
+}
+.ava {
+    width: 15%;
+    float: right;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    letter-spacing: 4px;
+}
+.divider::before, .divider::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    background:#d0d3d4;
+    margin: 0 8px;
+}
+.showcase {
+    padding: 5%;
+}
+.showcase img {
+    border-radius: 1.8%;
+}
+.showcase img:hover {
+    box-shadow: 0 0 3px coral;
+}
+form input {
+    border: none;
+    height: 3em;
+    padding: 0 1%;
+    margin: -0.2%;
+}
+form input[type="email"] {
+    width: 30%;
+    border-radius: 7px 0 0 7px;
+}
+form input[type="submit"] {
+    border-radius: 0 7px 7px 0;
+    background: white;
+}
+form input[type="submit"]:hover {
+    color: coral;
 }
